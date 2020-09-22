@@ -29,7 +29,7 @@ namespace Library
 
             services.AddDbContext<LibraryContext>(options =>
                 //options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-                options.UseSqlServer(Configuration.GetConnectionString("Server=tcp:contososerver-rh.database.windows.net,1433;Initial Catalog=LibraryDB;Persist Security Info=False;User ID=server-admin;Password=Password1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")))
+                options.UseSqlServer(Configuration.GetConnectionString("Server=tcp:contososerver-rh.database.windows.net,1433;Initial Catalog=LibraryDB;Persist Security Info=False;User ID=server-admin;Password=Password1;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
